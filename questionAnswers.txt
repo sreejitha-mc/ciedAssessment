@@ -1,0 +1,90 @@
+Q1)
+		1
+		4
+		3
+		2
+
+1. console.log(1) is executed first, printing 1 to the console.
+2. setTimeout(function(){console.log(2)}, 1000) schedules the execution of the function console.log(2) after a delay of 1000 milliseconds. The rest of the code continues to execute.
+3. setTimeout(function(){console.log(3)}, 0) schedules the execution of the function console.log(3) after a delay of 0 milliseconds. Even though the delay is specified as 0, it will still be executed after the currently executing code completes and the event loop gets a chance to handle it.
+4. console.log(4) is executed, printing 4 to the console.
+5. Now, the event loop has a chance to execute the callback function of the second setTimeout, so console.log(3) is printed to the console.
+6. Lastly, the callback function of the first setTimeout is executed, printing 2 to the console.
+
+
+Q2)
+
+function reverseWords(sentence) {
+  // Split the sentence into an array of words
+  var words = sentence.split(' ');
+
+  // Reverse each word in the array
+  var reversedWords = words.map(function(word) {
+    return word.split('').reverse().join('');
+  });
+
+  // Join the reversed words back into a sentence
+  var reversedSentence = reversedWords.join(' ');
+
+  return reversedSentence;
+}
+
+// Example usage:
+var originalSentence = "Welcome to this Javascript Guide!";
+var reversedSentence = reverseWords(originalSentence);
+
+console.log(reversedSentence);
+
+Q3)
+var originalData = [
+  {
+    name: "Menu3",
+    id: "1",
+    parent: {
+      name: "Menu2",
+      id: "2",
+      parent: {
+        name: "Menu1",
+        id: "3",
+      },
+    },
+  },
+  {
+    name: "Menu44",
+    id: "11",
+    parent: {
+      name: "Menu33",
+      id: "22",
+      parent: {
+        name: "Menu22",
+        id: "33",
+        parent: {
+          name: "Menu11",
+          id: "44",
+        },
+      },
+    },
+  },
+];
+
+function convertData(originalData) {
+  var convertedData = [];
+
+  originalData.forEach(function (item) {
+    var newItem = {
+      name: item.name,
+      id: item.id,
+    };
+
+    if (item.parent) {
+      newItem.child = convertData([item.parent])[0];
+    }
+
+    convertedData.push(newItem);
+  });
+
+  return convertedData;
+}
+
+var result = convertData(originalData);
+console.log(JSON.stringify(result, null, 2));

@@ -1,0 +1,111 @@
+<div class="loginWithUsernameAndPassword">Login with username and password</div>
+
+<!-- 
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+	<div>
+		<label for="username">Email address</label>
+		<input type="username" id="username" formControlName="username" />
+		<div *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched">
+			Email is required.
+		</div>
+		<div *ngIf="loginForm.get('username')?.hasError('username') && loginForm.get('username')?.touched">
+			Please enter a valid username address.
+		</div>
+	</div>
+
+	<div>
+		<label for="password">Password</label>
+		<input type="password" id="password" formControlName="password" />
+		<div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+			Password is required.
+		</div>
+		<div *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched">
+			Password must be at least 6 characters.
+		</div>
+	</div>
+
+	<button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>
+ -->
+
+
+
+
+
+<div class="donTHaveAnAccountSignup">
+	<p class="labelWrapper">
+		<span class="label">Don’t have an account?</span>
+		<span class="label2">Signup</span>
+	</p>
+</div>
+<div class="resetPassword">Reset Password</div>
+<div class="emailAddress">Email address</div>
+<div class="password">Password</div>
+<div class="welcome">Welcome!</div>
+
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div  class="rectangle7">
+	<input type="username" id="username" formControlName="username"/>
+	<div *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched" class="errMsg">
+		Email is required.
+	</div>
+	<div *ngIf="loginForm.get('username')?.hasError('username') && loginForm.get('username')?.touched" class="errMsg">
+		Please enter a valid username address.
+	</div>
+</div>
+
+<div class="rectangle8">
+	<input type="password" id="password" formControlName="password" />
+</div>
+<div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched" class="errMsg">
+	Password is required.
+</div>
+<div *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched" class="errMsg">
+	Password must be at least 6 characters.
+</div>
+<div class="rectangle9">
+</div>
+<button  class="login" type="submit" [disabled]="!loginForm.valid">Login</button>
+<!-- <div>Login</div> -->
+</form>
+
+<div class="vector3"><img src="assets/vector-3-icon.svg" alt="" class="icon" /></div>
+<div class="rectangle6"></div>
+<div class="unsplash75xPHEQBmvA"></div>
+<div class="image10"></div>
+<div class="loremIpsumDolorSitAmetConsecte">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+	aliqua.
+</div>
+<div class="allINeedToTellYouIsListen">
+	<div class="textBlock">All I need to tell you is</div>
+	<div class="textBlock2">Listen</div>
+</div>
+<div class="image12"></div>
+<div class="coreSafariBigSurToolbarLight">
+	<div class="toolbarGroup">
+		<div class="coreSafariBigSurToolbarToolbar">
+			<img src="assets/core-safari-big-sur-toolbar-to.svg" alt="" class="icon2" />
+		</div>
+		<div class="coreSafariBigSurToolbarToolbar2">
+			<img src="assets/core-safari-big-sur-toolbar-to2.svg" alt="" class="icon3" />
+		</div>
+	</div>
+	<div class="coreSafariBigSurToolbarToolbar3">
+		<img src="assets/core-safari-big-sur-toolbar-to3.svg" alt="" class="icon4" />
+	</div>
+	<cl-core-traffic-lights-big-sur></cl-core-traffic-lights-big-sur>
+	<div class="frame10">
+		<div class="coreSafariBigSurToolbarToolbar4">
+			<img src="assets/core-safari-big-sur-toolbar-to4.svg" alt="" class="icon5" />
+		</div>
+		<div class="coreSafariBigSurSearchBarDefau">
+			<div class="frame8"></div>
+			<div class="lock"><img src="assets/lock-icon.svg" alt="" class="icon6" /></div>
+		</div>
+		<div class="sPACER"></div>
+		<div class="lock2"><img src="assets/lock-icon2.svg" alt="" class="icon7" /></div>
+		<div class="leadTracker">Lead tracker</div>
+	</div>
+</div>

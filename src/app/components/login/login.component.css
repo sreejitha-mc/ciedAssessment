@@ -1,0 +1,476 @@
+:host,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  text-decoration: none;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+:host,
+:not(span, a, ul, ol, li, p) {
+  display: flex;
+}
+
+ul,
+ol {
+  text-indent: 0;
+  padding-inline-start: 1.5em;
+}
+
+p:empty::before {
+  content: '';
+  display: inline-block;
+}
+
+img {
+  object-fit: contain;
+}
+
+svg {
+  overflow: visible;
+}
+
+:host {
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.loginWithUsernameAndPassword {
+  opacity: 0.5;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 840px;
+  top: 231px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.annmariaGmailCom {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 855px;
+  top: 328px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.donTHaveAnAccountSignup {
+  position: absolute;
+  left: 985px;
+  top: 572px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.labelWrapper {
+  font-size: 16px;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  flex-shrink: 1;
+}
+.label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.label2 {
+  color: #3454cf;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.resetPassword {
+  color: #3454cf;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 1224px;
+  top: 422px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.unnamed {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 855px;
+  top: 426px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.emailAddress {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 840px;
+  top: 290px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.password {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 840px;
+  top: 383px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.welcome {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 840px;
+  top: 175px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.rectangle7 {
+  position: absolute;
+  left: 840px;
+  top: 313px;
+  width: 510px;
+  height: 50px;
+  outline: solid 1px #0003;
+  outline-offset: -1px;
+  border-radius: 5px;
+}
+.rectangle8 {
+  position: absolute;
+  left: 840px;
+  top: 406px;
+  width: 510px;
+  height: 50px;
+  outline: solid 1px #0003;
+  outline-offset: -1px;
+  border-radius: 5px;
+}
+.rectangle9 {
+  position: absolute;
+  left: 840px;
+  top: 506px;
+  width: 510px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #3454cf;
+}
+.login {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 1076px;
+  top: 522px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.vector3 {
+  position: absolute;
+  left: 1155px;
+  top: 593px;
+  width: 50px;
+  max-width: 100%;
+  height: 0px;
+  max-height: 100%;
+  overflow: visible;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rectangle6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750px;
+  height: 768px;
+  background-color: #1f2228;
+}
+.unsplash75xPHEQBmvA {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750px;
+  height: 768px;
+  background-color: #1f222880;
+  background-image: url('/assets/unsplash75xPHEQBmvA.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image10 {
+  transform-origin: top left;
+  position: absolute;
+  left: 100px;
+  top: 155px;
+  width: 81px;
+  height: 55px;
+  background-image: url('/assets/image10.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.loremIpsumDolorSitAmetConsecte {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 100px;
+  top: 299px;
+  width: 449px;
+  height: min-content;
+  flex-direction: column;
+}
+.allINeedToTellYouIsListen {
+  position: absolute;
+  left: 100px;
+  top: 195px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.textBlock {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.textBlock2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Urbanist, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+}
+.image12 {
+  position: absolute;
+  left: 100px;
+  top: 418px;
+  width: 650px;
+  height: 350px;
+  background-image: url('/assets/image12.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coreSafariBigSurToolbarLight {
+  position: absolute;
+  left: 100px;
+  right: 690px;
+  top: 387px;
+  height: 31px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5.7813px 0 0;
+  background-color: #fff;
+  box-shadow: 0px 0.2891px 0px 0px #00000026, inset 0px -0.2891px 0px 0px #0000000d;
+}
+.toolbarGroup {
+  position: absolute;
+  left: 77.4688px;
+  top: 6.9375px;
+  width: min-content;
+  height: min-content;
+  align-items: center;
+  overflow: hidden;
+}
+.coreSafariBigSurToolbarToolbar {
+  width: 19.0781px;
+  height: 16.1875px;
+  overflow: visible;
+}
+.icon2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coreSafariBigSurToolbarToolbar2 {
+  width: 19.0781px;
+  height: 16.1875px;
+  overflow: visible;
+}
+.icon3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coreSafariBigSurToolbarToolbar3 {
+  position: absolute;
+  left: 53.1875px;
+  top: 6.9375px;
+  width: 19.0781px;
+  height: 16.1875px;
+  overflow: visible;
+}
+.icon4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frame10 {
+  position: absolute;
+  left: 30.2404%;
+  right: 16.3942%;
+  top: 6.9375px;
+  height: 16.1875px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.2031px;
+  overflow: hidden;
+}
+.coreSafariBigSurToolbarToolbar4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19.0781px;
+  height: 16.1875px;
+  overflow: visible;
+}
+.icon5 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coreSafariBigSurSearchBarDefau {
+  position: absolute;
+  left: 24.4375px;
+  right: 24.125px;
+  top: 0;
+  height: 16.1875px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 3.4688px;
+  background-color: #0000000d;
+}
+.frame8 {
+  position: absolute;
+  left: calc(50% - 0.1564px);
+  top: calc(50% - 0.0937px);
+  width: min-content;
+  height: min-content;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+.lock {
+  position: absolute;
+  right: 3.9698px;
+  top: calc(50% - 0.0537px);
+  width: 5.9856px;
+  height: 7.2932px;
+  overflow: visible;
+  transform: translateY(-50%);
+}
+.icon6 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sPACER {
+  position: absolute;
+  left: 327.7969px;
+  top: 0;
+  width: 19.0781px;
+  height: 16.1875px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 3.4688px;
+}
+.lock2 {
+  position: absolute;
+  left: 146.4375px;
+  top: 4.6955px;
+  width: 4.5256px;
+  height: 6.6089px;
+  overflow: visible;
+}
+.icon7 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.leadTracker {
+  color: #4c4c4c;
+  font-size: 7.5156px;
+  font-weight: 500;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.004em;
+  position: absolute;
+  left: 155.8569px;
+  top: 4.0625px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+input {
+width: 510px;
+padding: 5px;
+}
+
+.errMsg {
+  margin-top: 55px;
+    margin-left: -510px;
+    font-size: 10px;
+    color: red;
+}
